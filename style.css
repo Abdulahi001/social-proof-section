@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Exo+2&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+
+
+
+
+/* ## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%) */
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink:hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta:hsl(300, 24%, 96%);
+    --white:hsl(0, 0%, 100%);
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: url(images/);
+
+}
+body .container{
+    width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+   
+    
+}
+
+body .container .content{
+    height: 300px;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body .container .content .info{
+    width: 370px;
+    padding: 20px 0;
+    margin: 0 40px;
+    
+
+    
+
+}
+body .container .content .info p{
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 23px;
+    color: var(--dark-grayish-magenta);
+}
+body .container .content h1{
+    color: var(--very-dark-magenta);
+    font-size: 43px;
+    font-weight: 700;
+}
+body .container .content .cards{
+    padding: 20px 0;
+    margin-right: 100px;
+    position: relative;
+
+}
+body .container .content .cards .card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    padding: 15px ;
+    background: var(--light-grayish-magenta);
+    margin: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+body .container .content .cards .card img{
+    width: 13px;
+}
+body .container .content .cards .card span{
+    font-size: 11px;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+body .container .content .cards .card-2{
+    position: relative;
+    right: -10%;
+}
+body .container .content .cards .card-3{
+    position: relative;
+    right: -18%;
+}
+body .container .three-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -20px;
+}
+
+
+body .container .three-box .boxs{
+    width: 280px;
+    padding: 25px 20px;
+    margin: 20px 10px;
+    background-color: var(--very-dark-magenta);
+    border-radius: 10px;
+ 
+}
+body .container .three-box .boxs .profile{
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: -15px;
+    
+
+}
+body .container .three-box .boxs .profile img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+body .container .three-box .boxs .profile .name p{
+    
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+    margin: 5px;
+    margin-bottom: -3px;
+}
+
+body .container .three-box .boxs .profile .name span{
+    font-size: 12px;
+    margin-left: 5px;
+    color: var(--soft-pink);
+    
+}
+body .container .three-box .boxs  p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    color: white;
+    
+}
+body .container .three-box .box-3{
+  margin-bottom: -40px;
+  
+}
+body .container .three-box .box-2{
+    margin-bottom: -15px;
+}
+
+
+@media(max-width:400px){
+    body {
+        display: grid;
+        place-content: center;
+        height: 230vh;
+    }
+    body .container{
+        height: 200vh;
+       position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        
+       
+       
+    }
+    .container .content{
+        display: flex;
+        flex-direction: column;
+       margin-top: -80px;
+       width: 100%;
+       position: relative;
+       top: 0;
+       
+       
+     
+    }
+    body  .container .content .info{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+       
+        
+    }
+    body .container .content .cards {
+        margin-bottom: 40px;
+    }
+    body .container .content .cards .card{
+        padding: 20px 0;
+        border-radius: 0;
+        position: relative;
+        right: 0;
+        left: 15%;
+        display: flex;
+        flex-direction: column;
+        
+        
+       
+
+        
+    }
+    .container .content .cards .card-2{
+        position: none;
+        
+    }
+
+    body .container .three-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: -5%;
+        
+    }
+    body .container .three-box .box-1{
+        margin-bottom: -10px;
+        margin-top: 100px;
+    }
+}
